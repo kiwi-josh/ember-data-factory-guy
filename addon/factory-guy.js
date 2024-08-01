@@ -518,7 +518,7 @@ class FactoryGuy {
    */
   afterDestroyStore(store) {
     const self = this;
-    const originalWillDestroy = store.willDestroy.bind(store);
+    const originalWillDestroy = store?.willDestroy?.bind?.(store);
     store.willDestroy = function () {
       originalWillDestroy();
       self.store = null;

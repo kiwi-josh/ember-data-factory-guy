@@ -87,6 +87,10 @@
     "release-it-lerna-changelog": "^3.1.0"
   },
   "peerDependencies": {
+    "@ember-data/adapter": "*",
+    "@ember-data/serializer": "*",
+    "@ember-data/store": "*",
+    "@ember-data/model": "*",
     "ember-data-model-fragments": "*",
     "ember-django-adapter": "*",
     "active-model-adapter": "*"
